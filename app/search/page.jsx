@@ -110,7 +110,7 @@ export default async function Search({ searchParams }) {
                 {articles.length > 1 && (
                     <ul className="mt-8 space-y-6">
                         {articles.map((article, idx) => (
-                            <li>
+                            <li key={idx}>
                                 <a
                                     href={"/article/?id=" + article.url}
                                     key={idx}
@@ -120,7 +120,7 @@ export default async function Search({ searchParams }) {
                                 </a>
 
                                 <p
-                                    class="block max-w-3xl mt-2 text-xs text-gray-800 truncate"
+                                    className="block max-w-3xl mt-2 text-xs text-gray-800 truncate"
                                     style={{
                                         lineClamp: 3,
                                         boxOrient: "vertical",

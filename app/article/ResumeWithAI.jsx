@@ -14,7 +14,7 @@ export default function ResumeWithAI({ pdf }) {
                 setResume(data);
                 setResumeIsLoading(false);
             });
-    }, []);
+    }, [pdf]);
 
     return (
         <div className="pt-8 border-t border-gray-300 lg:border-t-0 lg:border-l lg:pl-8 lg:pt-0">
