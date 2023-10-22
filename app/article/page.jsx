@@ -37,7 +37,11 @@ export default async function Page({ searchParams }) {
             .replace(/  /g, " ")
             .replace(/\n/g, "")
             .trim(),
-        pdf: entry.find("link[title='pdf']").attr("href").trim(),
+        pdf: entry
+            .find("link[title='pdf']")
+            .attr("href")
+            .trim()
+            .replace("http", "https"),
     };
 
     return (
