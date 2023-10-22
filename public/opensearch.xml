@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>IntiTex AI</ShortName>
+  <Description>Busca artículos en IntiTex AI</Description>
+  <Tags>intitex AI</Tags>
+  <Image height="16" width="16" type="image/x-icon">https://favicon.ico</Image>
+  <Url template="https://copei.org.ve/?s={searchTerms}" type="text/html" />
+  <Query role="example" searchTerms="scientific notation"></Query>
+</OpenSearchDescription>
